@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flashcard Vocabulary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="top-bar">
+  <button id="homeBtn" class="home-btn">HOME</button>
+</header>
+
+<!-- ===== FLASHCARD PAGE ===== -->
+<section id="flashcard-page" class="page active">
+  <img src="img/head1.png" class="title-img">
+
+  <div class="card-wrapper">
+    <p class="card-mode">FLASHCARD</p>
+
+    <div class="flashcard" id="flashcard">
+      <div class="flashcard-inner">
+        <div class="card-face card-front">
+          <p class="label">ENGLISH WORD</p>
+          <h2 id="word"></h2>
+        </div>
+
+        <div class="card-face card-back">
+          <p class="label">MEANING</p>
+          <h2 id="thai"></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button id="prev">PREVIOUS</button>
+      <span id="counter">1 / 0</span>
+      <button id="next">NEXT</button>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <div class="mini-card">
+      <p class="small">VOCAB TIME</p>
+      <h3 id="daily-word">-</h3>
+      <p id="daily-thai">-</p>
+      <button class="refresh" id="refresh">⟳</button>
+    </div>
+
+    <button class="play-card" id="playQuiz">
+      PLAY QUIZ!
+    </button>
+
+  </div>
+</section>
+
+<!-- ===== QUIZ PAGE ===== -->
+<section id="quiz-page" class="page">
+  <img src="img/head2.png" class="title-img2">
+
+  <div class="quiz-box">
+    <p class="question-count" id="q-count">QUESTION 1/20 <br></p>
+    <h2 id="quiz-thai">-</h2>
+  </div>
+
+  <input
+    type="text"
+    id="answer"
+    placeholder="TYPE ENGLISH WORD"
+  />
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
